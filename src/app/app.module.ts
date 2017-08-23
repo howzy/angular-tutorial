@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ExponentialStrengthPipe } from './pipe/exponential-strength.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExponentialStrengthPipe
   ],
   imports: [
     BrowserModule,

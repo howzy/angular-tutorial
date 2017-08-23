@@ -1,0 +1,5 @@
+<p>The hero's birthday is {{ birthday | date: format | uppercase }}</p>
+<button (click)="toggleFormat()">Toggle Format</button>
+
+<h3>自定义管道</h3>
+<p>2 的 10 次方是：{{ 2 | exponentialStrength: 10 }}</p>
