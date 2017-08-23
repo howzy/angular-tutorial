@@ -1,0 +1,21 @@
+.unless {
+  padding: 5px;
+}
+
+.unless.a,
+.btn.a {
+  color: red;
+  border: 2px solid orange;
+  background: yellow;
+}
+
+.unless.b,
+.btn.b {
+  border: 2px solid rgb(0, 123, 0);
+  background: rgb(140, 239, 144);
+}
+
+.btn {
+  padding: 5px;
+  cursor: pointer;
+}

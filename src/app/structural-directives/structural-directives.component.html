@@ -1,0 +1,10 @@
+<p>
+  The condition is currently
+  <span class="unless" [ngClass]="!condition ? 'a' : 'b'" >{{condition}}</span>.
+  <span class="btn" [ngClass]="condition ? 'a' : 'b'" (click)="condition=!condition">Toggle condition to <span>{{!condition}}</span></span>
+</p>
+<p *myUnless="condition" class="unless a">(A) This paragraph is displayed because the condition is false.</p>
+<p *myUnless="!condition" class="unless b">
+  (B) Although the condition is true.
+  this paragraph is displayed because myUnless is set to false.
+</p>
