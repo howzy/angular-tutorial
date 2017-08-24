@@ -1,0 +1,14 @@
+<button (click)="goBack()">返回</button>
+<h2>{{title}}</h2>
+<p>
+  New hero:
+  <input type="text" #box (keyup.enter)="addHero(box.value); box.value=''" placeholder="hero name">
+  <input type="checkbox" id="can-fly" [(ngModel)]="canFly">can fly
+</p>
+
+<h4>Heroes who fly (piped)</h4>
+<div id="flyers">
+  <div *ngFor="let hero of heroes">
+    {{hero.name}}
+  </div>
+</div>
