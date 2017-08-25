@@ -1,0 +1,10 @@
+#hero-list-basic, #flyInOut {
+  display: inline-block;
+  margin-left: 30px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#flyInOut {
+  background: #eee;
+}
