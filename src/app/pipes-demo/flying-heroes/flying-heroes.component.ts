@@ -12,11 +12,12 @@ export class FlyingHeroesComponent implements OnInit {
   heroes: any[] = [];
   canFly = true;
   mutate = true;
-  title = 'Flying Heroes (pure pipe)';
+  title = 'Flying Heroes';
 
   constructor(private location: Location) { }
 
   ngOnInit() {
+    this.reset();
   }
 
   addHero(name: string) {
@@ -27,12 +28,14 @@ export class FlyingHeroesComponent implements OnInit {
       canFly: this.canFly
     }
     if (this.mutate) {
-
+      this.heroes.push(hero);
+    } else {
+      this.heroes = this.heroes.concat(hero);
     }
   }
 
   reset() {
-    this.heroes = HEROES.
+    this.heroes = HEROES.slice();
   }
 
   goBack() {

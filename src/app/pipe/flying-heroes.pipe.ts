@@ -12,3 +12,13 @@ export class FlyingHeroesPipe implements PipeTransform {
   }
 
 }
+
+@Pipe({
+  name: 'flyingHeroesImpure',
+  pure: false
+})
+export class FlyingHeroesImpurePipe implements PipeTransform {
+  transform(allHeroes: Flyer[]) {
+    return allHeroes.filter(hero => hero.canFly);
+  }
+}

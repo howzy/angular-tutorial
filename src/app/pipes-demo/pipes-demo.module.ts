@@ -7,7 +7,7 @@ import { PipesDemoComponent } from './pipes-demo.component';
 import { PipesDemoRoutingModule } from './pipes-demo-routing.module';
 import { ExponentialStrengthPipe } from '../pipe/exponential-strength.pipe';
 import { FlyingHeroesComponent } from './flying-heroes/flying-heroes.component';
-import { FlyingHeroesPipe } from '../pipe/flying-heroes.pipe';
+import { FlyingHeroesPipe, FlyingHeroesImpurePipe } from '../pipe/flying-heroes.pipe';
 
 @NgModule({
   imports: [
@@ -19,7 +19,8 @@ import { FlyingHeroesPipe } from '../pipe/flying-heroes.pipe';
     PipesDemoComponent,
     ExponentialStrengthPipe,
     FlyingHeroesComponent,
-    FlyingHeroesPipe
+    FlyingHeroesPipe,
+    FlyingHeroesImpurePipe
   ]
 })
 export class PipesDemoModule { }
