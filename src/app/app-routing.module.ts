@@ -6,7 +6,8 @@ export const routes: Routes = [
   { path: 'structural-directives', loadChildren: 'app/structural-directives/structural-directives.module#StructuralDirectivesModule' },
   { path: 'pipes-demo', loadChildren: 'app/pipes-demo/pipes-demo.module#PipesDemoModule' },
   { path: 'animations-demo', loadChildren: 'app/animations-demo/animations-demo.module#AnimationsDemoModule' },
-  { path: 'template-driven-forms', loadChildren: 'app/template-driven-forms/template-driven-forms.module#TemplateDrivenFormsModule' }
+  { path: 'template-driven-forms', loadChildren: 'app/template-driven-forms/template-driven-forms.module#TemplateDrivenFormsModule' },
+  { path: 'reactive-forms-demo', loadChildren: 'app/reactive-forms-demo/reactive-forms-demo.module#ReactiveFormsDemoModule' }
 ];
 
 @NgModule({
