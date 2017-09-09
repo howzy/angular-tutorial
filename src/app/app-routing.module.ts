@@ -9,7 +9,7 @@ export const routes: Routes = [
   { path: 'template-driven-forms', loadChildren: 'app/template-driven-forms/template-driven-forms.module#TemplateDrivenFormsModule' },
   { path: 'form-validation', loadChildren: 'app/form-validation/form-validation.module#FormValidationModule' },
   { path: 'reactive-forms-demo', loadChildren: 'app/reactive-forms-demo/reactive-forms-demo.module#ReactiveFormsDemoModule' },
-  { path: 'router-demo', loadChildren: 'app/router-demo/router-demo.module#RouterDemoModule' }
+  // { path: 'router-demo', loadChildren: 'app/router-demo/router-demo.module#RouterDemoModule' }
 ];
 
 @NgModule({
